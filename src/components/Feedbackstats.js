@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Feedbackstats = ({ feedback }) => {
-    //Calculate average ratings
+    //Calculating average ratings
     let average =
         feedback.reduce((acc, current) => {
             return acc + current.rating;
