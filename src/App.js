@@ -3,6 +3,7 @@ import FeedbackList from "./components/FeedbackList";
 import { useState } from "react";
 import FeedbackData from "./data/FeedbackData";
 import Feedbackstats from "./components/Feedbackstats";
+import FeedbackForm from "./components/FeedbackForm";
 
 function App() {
     //Global state variable
@@ -16,6 +17,7 @@ function App() {
         <>
             <Header />
             <div className="container">
+                <FeedbackForm />
                 <Feedbackstats feedback={feedback} />
                 <FeedbackList
                     feedback={feedback}
