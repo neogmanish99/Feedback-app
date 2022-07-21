@@ -1,3 +1,5 @@
+/** @jsxImportSource theme-ui */
+
 import React, { useState } from "react";
 
 const RatingSelect = ({ select }) => {
@@ -9,7 +11,7 @@ const RatingSelect = ({ select }) => {
     };
     return (
         <>
-            <ul className="rating">
+            <ul className="rating" sx={{ color: "rateText" }}>
                 <li>
                     <input
                         type="radio"

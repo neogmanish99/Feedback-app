@@ -44,6 +44,7 @@ function App() {
                         }
                     ></Route>
                     <Route path="/about" element={<AboutPage />} />
+                    {/* * is used for nested routes */}
                     <Route path="/post/*" element={<Post />} />
                 </Routes>
             </div>

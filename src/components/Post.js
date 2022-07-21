@@ -19,6 +19,8 @@ const Post = () => {
         <div>
             <h1>Post</h1>
             <button onClick={clickMe}>Click</button>
+
+            {/* Nested routes */}
             <Routes>
                 <Route path="/show" element={<h1>Hello</h1>} />
             </Routes>
