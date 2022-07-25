@@ -23,11 +23,17 @@ ul {
     padding: 0 20px;
 }
 
+.head-container {
+    display: flex;
+    width: 735px;
+    justify-content: space-between;
+}
+
 header {
     height: 70px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 30px;
 }

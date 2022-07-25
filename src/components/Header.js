@@ -15,24 +15,28 @@ const Header = ({ text, bgColor, textColor }) => {
     return (
         <header style={headerStyles}>
             <div className="container">
-                <h2>{text}</h2>
-            </div>
+                <div className="head-container">
+                    <h2>{text}</h2>
 
-            {/* DARK MODE */}
-            <button
-                onClick={() =>
-                    setColorMode(colorMode === "light" ? "dark" : "light")
-                }
-                style={{
-                    border: "0",
-                    borderRadius: "8px",
-                    width: "100px",
-                    height: "40px",
-                }}
-                sx={{ backgroundColor: "primary", color: "secondary" }}
-            >
-                DARK
-            </button>
+                    {/* DARK MODE */}
+                    <button
+                        onClick={() =>
+                            setColorMode(
+                                colorMode === "light" ? "dark" : "light"
+                            )
+                        }
+                        style={{
+                            border: "0",
+                            borderRadius: "8px",
+                            width: "100px",
+                            height: "40px",
+                        }}
+                        sx={{ backgroundColor: "primary", color: "secondary" }}
+                    >
+                        DARK
+                    </button>
+                </div>
+            </div>
         </header>
     );
 };
